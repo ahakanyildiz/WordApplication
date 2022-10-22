@@ -1,0 +1,28 @@
+﻿@model Word
+@{
+    ViewData["Title"] = "AddWord";
+    Layout = "~/Views/Shared/_Layout2.cshtml";
+}
+
+<h1>AddWord</h1>
+
+<form method="post">
+  <div class="form-group">
+    <label for="formGroupExampleInput">Türkçe</label>
+    <input type="text" class="form-control" id="formGroupExampleInput" asp-for="@Model.TrName" placeholder="Example input">
+  </div>
+
+  <div class="form-group">
+    <label for="formGroupExampleInput2">İngilizce</label>
+    <input type="text" class="form-control" id="formGroupExampleInput2" asp-for="@Model.EnName" placeholder="Another input">
+  </div>
+
+    <div class="form-group">
+    <label for="formGroupExampleInput3">Resim Url</label>
+    <input type="text" class="form-control" asp-for="@Model.ImageUrl" id="formGroupExampleInput3" placeholder="Another input">
+  </div>
+
+  <div>
+      <div class="btn btn-primary">Ekle</div>
+  </div>
+</form>
