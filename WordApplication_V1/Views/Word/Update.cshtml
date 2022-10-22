@@ -1,16 +1,15 @@
 ﻿@model Word
 @{
-    ViewData["Title"] = "AddWord";
+    ViewData["Title"] = "Update";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<h1>AddWord</h1>
 
 
 <span asp-validation-for="@Model.TrName"></span>
 <span asp-validation-for="@Model.EnName"></span>
 <span asp-validation-for="@Model.ImageUrl"></span>
-<form method="post" asp-controller="Word" asp-action="AddWord">
+<form method="post" asp-controller="Word" asp-action="Update">
 
   <div class="form-group">
     <label>Türkçe</label>
@@ -28,7 +27,7 @@
     </div>
 
   <div>
-      <button type="submit">Ekle</button>
+      <button type="submit">Güncelle</button>
   </div>
 
 
