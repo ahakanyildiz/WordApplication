@@ -9,8 +9,8 @@
     <thead>
         <tr>
             <td>Id</td>
-            <td>En Name</td>
-            <td>Tr Name</td>
+            <td>EN</td>
+            <td>TR</td>
             <td>Image</td>
             <td>Update</td>
             <td>Delete</td>
@@ -25,8 +25,8 @@
                 <td>@item.EnName</td>
                 <td>@item.TrName</td>
                 <td><image src="@item.ImageUrl" style="height:100px" /></td>
-                <td><a href="word/update/@item.Id" class="btn btn-outline-info">Update</a></td>
-                <td><a href="word/delete/@item.Id" class="btn btn-danger">Delete</a></td>
+                <td><a href="/word/update/@item.Id" class="btn btn-outline-info">Update</a></td>
+                <td><a href="/word/delete/@item.Id" class="btn btn-outline-danger">Delete</a></td>
             </tr>
         }
     </tbody>
