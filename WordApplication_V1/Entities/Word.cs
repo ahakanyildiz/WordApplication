@@ -1,10 +1,10 @@
 ﻿using System.ComponentModel.DataAnnotations;
+using WordApplication_V1.Core;
 
 namespace WordApplication_V1.Entities
 {
-    public class Word
-    {
-        
+    public class Word : IEntity
+    { 
         public Guid Id { get; set; }
 
         [Required(ErrorMessage ="İngilizce alanı boş geçilemez.")]
